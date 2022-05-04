@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
+  <style>
+    
+    
+      #input_box{
+         width: 90%;
+         height: auto;
+         border: 0.5px solid rgb(179, 179, 179);
+         margin: auto;
+         border-radius: 7px;
+      
+      }
+      .page{
+          display: flex;
+       /* // justify-content: center; */
+        width: 41%;
+         /* border: 1px solid rgb(255, 4, 4);  */
+        margin: auto;
+        margin-top: 10px;
+
+      }
+      .page>button{
+          display: block;
+          margin: auto;
+          padding: 16px 8px;
+          border: 0px ;
+          background-color: white;
+          
+      }
+      
+      hr{
+          margin-top: 0px;
+          width: 95%;
+          height: 0px;
+          margin: auto;
+          margin-bottom: 20px;
+         color: #727483;
+         opacity: 0.5;
+      }
+                              /* Input Field Styling */
+      .input_button{
+        /* border: 1px solid black;  */
+          display:flex;
+          width: 90%;
+       
+          margin: auto;
+      }
+      .input_button>button{
+          border: 1.5px solid  #727483;
+          background-color: white;
+          display: block;
+          margin: auto;
+          display: flex;
+          border-radius: 8px;
+          
+      }
+      .input_button>button:nth-child(1){
+         padding: 10.2px 0px;
+        width: 40%;
+              
+      }
+      .input_button>button:nth-child(2){
+          padding: 10px 0px;
+        width: 15%;
+       
+          
+      }
+      .input_button>button:nth-child(3){
+          padding: 10px 0px;
+        width: 15%;
+                
+      }
+      .input_button>button:nth-child(4){
+          padding: 10px 0px;
+        width: 25%;
+          
+      }
+      .input_button>button>.icon{
+        font-size: 18px;
+        /* font-weight: 700; */
+       margin-left: 5px;
+       padding: 2px 0px 0px 0px;
+       /* border: 1.5px solid  #727483; */
+       width: 10%;
+
+      }
+      .input_button>button>.icon+div{
+        font-size: 15px;
+        color: #5a5b63;
+        display: flex;
+        align-items: center;
+        /* border: 1.5px solid  #727483; */
+        padding: 3px 0px 0px 0px;
+
+      }
+      .checkbox{
+          display: flex;
+          width: 31%;
+          /* border: 1px solid black; */
+          justify-content: space-evenly;
+          margin-top: 29px;
+          margin-left: 51px;
+          padding: 2px 0px 2px 18px;
+      }
+      .checkbox>div{
+          display: flex;
+      }
+      .checkbox>div>div{
+         font-size: 14px;
+         font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+       margin-top: -3px;
+       font-weight: 450;
+      }
+      input[type=checkbox] {
+   transform: scale(1.5);
+ 
+/* border: radius 50px solid; */
+   border-width: 4px ;
+
+       border-style: solid;
+
+}
+#srchButton{
+    display: block;
+    margin: auto;
+    padding: 14px 55px;
+    margin-top: 40px;
+    background-color:  #3662D8;
+    border-radius:7px;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+                                /* Top SEction End !*/
+
+    #bg-img-container{
+        /* border: 1px solid rgb(121, 118, 118); */
+        width: 90%;
+       border-radius: 7px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    #bg-img{
+        background-image: url("https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg");
+        background-repeat: no-repeat;
+     border-radius: 7px;
+  background-size: 100% 100%;
+         
+    }
+  
+    #text-content{
+        /* border: 1px solid black; */
+        width: 50%;
+        padding: 150px 60px;
+      
+    }
+    #text-content>h1,p{
+        color: #FFFFFF;
+    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%);
+    width: 54%;
+    margin-bottom: 10px;
+ 
+  
+    }
+    #text-content>p{
+    line-height: 21px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+   font-weight: 530;
+    
+    }
+    #text-content>h1{
+   
+    font-size: 36px;
+    /* font-family: 'Roboto', sans-serif; */
+font-family: 'Source Sans Pro', sans-serif;
+width: 60%;
+    
+    }
+    #text-content>button{
+   
+        background-color: #3765e4;
+    color: #FFFFFF;
+    border: 0px;
+     padding:13px 16px; 
+    border-radius: 5px;
+    /* width: 30%; */
+    
+    }
+    #btn-text{
+        font-size: 16px;
+        font-weight: 546;
+     
+        font-family:'Quicksand', sans-serif;
+    }
+    #bg-color{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.45);
+        border-radius: 8px;
+    }
+    #bg-color2{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.1);
+        /* border-radius: 8px; */
+    }
+    #bg-img-container2{
+        border: 1px solid rgb(121, 118, 118);
+        width: 90%;
+        height:800px;
+       border-radius: 7px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: relative;
+      
+       
+    }
+    #box-sizing{
+        height: 30%;
+        width: 100%;
+        border: 1px solid rgb(121, 118, 118);
+        margin: auto;
+    }
+    #bg-img2{
+        background-image: url("https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg");
+        background-repeat: no-repeat;
+     /* /* border-radius: 7px; */
+  background-size: 115% 130%;
+  height: 100%;
+ overflow: hidden;
+ }
+    #bg-img2+div{
+    
+       /* height: 400px; */
+       position: absolute;
+     top: 190px;
+       left: 16px; 
+       color: #ffffff;
+    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%);
+    width: 80%;
+   
+    line-height: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+  
+   
+    }
+    #Qr-cont{
+        width: 100%;
+        height: 400px;
+        border: 1px solid rgb(121, 118, 118);
+        margin-top: 45px;
+        display: flex;
+    }
+    #img-cont{
+        border: 1px solid rgb(121, 118, 118);
+        width: 27%;
+    }
+    #img-cont>img{
+        width: 100%;
+    }
+    #text-contQr{
+        border: 1px solid rgb(121, 118, 118);
+        width: 50%;
+        margin-left: 20px;
+        margin-right: 20px;
+     
+      
+    }
+    #text-contQr>h1,h4,p,div{
+        width: 100%;
+    }
+    #text-contQr>p{
+        color: gray;
+        text-shadow: none;
+       margin-bottom: 20px;
+    
+
+    }
+  #Qr-logo{
+    border: 1px solid rgb(121, 118, 118);
+    width: 20%;
+  }
+  #btn-getapp{
+      margin-top: 10px;
+      margin-bottom: 40px;
+      display:flex;
+      border: 1px solid rgb(121, 118, 118);
+      
+      align-items: center;
+  }
+ 
+  #btn-getapp>#phn>input,#cntrycode>input{
+      padding: 10px;
+  }
+ 
+  #phn{
+    margin-left:-100px;
+  }
+  #btn-getapp>button{
+      border: none;
+      background-color: #3662D8;
+      margin-left:0px;
+      padding: 10px;
+     
+  }
+  </style>
+</head>
+<body>
+    <div id="navbarContanier">
+        <div id="navlogocont">
+            <div id="logo">
+                <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
+            </div>
+            <div> More travel <i class="fa-solid fa-angle-down"></i></div>                        
+        </div>
+
+        <div id="control">
+      <div><i class="fa-solid fa-globe"></i>&ensp;<div> ENGLISH</div></div>
+      <div>Support</div>
+      <div>Trips</div>
+      <div>Sign In</div>
+    </div>
+    </div>
+  
+    <div id="input_box">
+        <div class="page">
+            <button>Stays</button>
+            <button>Flight</button>
+            <button>Cars</button>
+            <button>Packages</button>
+            <button>Things To Do</button>
+          
+        </div>
+        <hr>
+        <div class="input_button">
+            <button><div class="icon"><i class="fa-solid fa-location-dot"></i></div>&ensp;<div>Going To</div></button>
+            <button><div  class="icon"><i class="fa-solid fa-calendar-day"></i></div>&ensp;<div>Check-in</div></button>
+            <button><div  class="icon"><i class="fa-solid fa-calendar-day"></i></div>&ensp;<div>Check-out</div></button>
+            <button><div  class="icon"><i class="fa-solid fa-user"></i></div>&ensp;<div> Travellers</div></button>
+        </div>
+        <div class="checkbox">
+            <div><input type="checkbox" id="add-flight">&ensp;<div>Add a flight</div> </div>
+            <div><input type="checkbox" id="add-car">&ensp;<div>Add a cars</div></div>
+        </div>
+        <!-- <div></div> -->
+        <button id="srchButton">Search</button>       
+    </div>
+                                    <!-- /* Top SEction End !*/ -->
+    <div id="bg-img-container">
+        <div id="bg-img">
+            <!-- <img src="https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg" alt=""> -->
+          <div id="bg-color">
+            <div id="text-content">
+                <h1>Save instantly with Expedia Rewards</h1>
+               <p>You can enjoy access to perks like Member Prices, saving you 10% or more on select hotels. Terms may apply.</p>
+               <button><div id="btn-text">See Member Price</div></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="bg-img-container2">
+      <div id="box-sizing">
+          <div id="bg-img2"> <div id="bg-color2"></div></div>
+          <div>Plan ahead and save <br>Book 60 days in advance for 20% off select stays.</div>
+        </div>  
+         
+        <div id="Qr-cont">
+            <div id="img-cont"><img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt=""></div>
+            <div id="text-contQr">
+                <h1>Members get more on the app</h1>
+                <p>Earn double Expedia Rewards points when you book on the app, plus get travel alerts and manage your bookings on the go.</p>
+                <h4>Text yourself a download link for easy access</h4>
+                <div id="btn-getapp">
+                    <div id="cntrycode"><input type="number" placeholder="Country code"></div>
+                  <div id="phn"><input type="number" placeholder="Phone number"></div>
+                    <button id="btngetapp">Get the app</button>
+                </div>
+                <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+            <div id="Qr-logo">hello</div>
+        </div>
+     
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<!-- color: #FFFFFF;
+    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%); -->

@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="navbar.css">
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
   <style>
-    
+    *{
+    padding: 0px;
+    margin: 0px;
+}
     
       #input_box{
          width: 90%;
@@ -36,11 +39,21 @@
           padding: 16px 8px;
           border: 0px ;
           background-color: white;
+          font-size: 13px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 650;
+    color:  #343B53;
+    
           
+      }
+      .page>button:hover{
+          /* border-bottom: #3662D8; */
+          cursor: pointer;
+          border-bottom: 2px solid  #3662D8;
       }
       
       hr{
-          margin-top: 0px;
+          
           width: 95%;
           height: 0px;
           margin: auto;
@@ -231,6 +244,7 @@ width: 60%;
       
        
     }
+  
     #box-sizing{
         height: 30%;
         width: 100%;
@@ -297,11 +311,12 @@ width: 60%;
     border: 1px solid rgb(121, 118, 118);
     width: 20%;
   }
+
   #btn-getapp{
       margin-top: 10px;
       margin-bottom: 40px;
       display:flex;
-      border: 1px solid rgb(121, 118, 118);
+      border: 1px solid rgb(214, 12, 12);
       
       align-items: center;
   }
@@ -323,14 +338,15 @@ width: 60%;
   </style>
 </head>
 <body>
+                             <!-- NavBar Start -->
     <div id="navbarContanier">
         <div id="navlogocont">
             <div id="logo">
                 <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
             </div>
-            <div> More travel <i class="fa-solid fa-angle-down"></i></div>                        
+            <div>More travel&ensp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>         
         </div>
-
+      
         <div id="control">
       <div><i class="fa-solid fa-globe"></i>&ensp;<div> ENGLISH</div></div>
       <div>Support</div>
@@ -338,7 +354,12 @@ width: 60%;
       <div>Sign In</div>
     </div>
     </div>
-  
+           <!-- **************************************NavBar END! *************************************************-->
+
+
+
+
+                               <!-- /* Top SEction START !*/ -->
     <div id="input_box">
         <div class="page">
             <button>Stays</button>
@@ -365,7 +386,7 @@ width: 60%;
                                     <!-- /* Top SEction End !*/ -->
     <div id="bg-img-container">
         <div id="bg-img">
-            <!-- <img src="https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg" alt=""> -->
+           
           <div id="bg-color">
             <div id="text-content">
                 <h1>Save instantly with Expedia Rewards</h1>
@@ -384,7 +405,7 @@ width: 60%;
         <div id="Qr-cont">
             <div id="img-cont"><img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt=""></div>
             <div id="text-contQr">
-                <h1>Members get more on the app</h1>
+                <h1>Our app takes you further</h1>
                 <p>Earn double Expedia Rewards points when you book on the app, plus get travel alerts and manage your bookings on the go.</p>
                 <h4>Text yourself a download link for easy access</h4>
                 <div id="btn-getapp">

@@ -10,117 +10,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="popUp.css">
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
   <style>
-    #last-sec{
-        width: 100%;
-        margin-top: 50px;
 
-    }
-    
-    #last-sec>h3{
-      text-align: center;
-      font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 14px;     
-    color: #141D38;
-    font-weight: 500;
-       
-
-    }
-    #last-sec>a{
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 14px;
-      background-color: transparent;
-    color: #3662D8;
-    font-weight: 400;
-       
-
-    }
-    #cmpny-info{
-        width: 90%;    
-       /* border: 1px solid black; */
-       margin: auto;
-       display: grid;
-       grid-template-columns: repeat(5,1fr);
-       gap: 10px;
-   margin-top:45px;
-    }
-    #cmpny-info>div{
-      
-       /* border: 1px solid black; */
-       padding: 20px;
-   
-    }
-    #cmpny-info>div>a{
-      
-      display: block;
-      margin-top: 11px;
-      text-decoration: none;
-      font-size: 12px;
-      background-color: transparent;
-    color: #3662D8;
-    font-weight: 400;
-     
-   
-    }
-    #cmpny-info>div>a,h3{
-        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-       
-    }
-    #cmpny-info>div>h3{
-        color: #141D38;
-        font-size: 14px;        
-    color: #141D38;
-    font-weight: 500;
-   
-    }
-    #cmpny-info>div>a:hover{
-        text-decoration: underline;
-    }
-#hr{
-   
-    width: 90%;
-    color: rgb(75, 68, 68);
-    margin-bottom: 0px;
-}
-#last-logo-cont{
-    width: 90%;  
-    /* border: 1px solid black; */
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-}
-#last-logo-cont>div{
-    width: 16%;
-    padding: 0px 0px 10px 0px;
-    /* border: 1px solid black; */
-    margin-top: 20px;
-}
-#last-logo-cont>div>img{
-    width: 100%;
-    height: 100%;
-}  
-#end>p{
-   width: 91%;
-    font-size:12px;
-    color: #343B53;
-    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;
-    overflow-wrap: break-word;
-   margin: auto;
-   text-shadow: none;
-} 
-#end{
-    width: 95%;
-    margin: auto;
-    /* border: 1px solid black; */
-    margin-bottom: 51px;
-}                                  
   </style>
 </head>
 <body>
@@ -130,7 +23,7 @@
             <div id="logo">
                 <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
             </div>
-            <div>More travel&ensp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>         
+            <div id="More-trvl">More travel&ensp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>         
         </div>
       
         <div id="control">
@@ -278,26 +171,30 @@
             <div id="end">
                 <p>© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
             </div>
-           
-  
+                            <!-- LAST SECTION END -->
+                    
+                               <!-- POP UP WINDOW  -->
+
+              <div class="popup-Mt">
+                <div class="popUp-cont">
+                    <div><i class="fa-solid fa-hotel"></i>&ensp;&nbsp;Stays</div>
+                    <div><i class="fa-solid fa-plane-departure"></i>&ensp;&nbsp;Flights</div>
+                    <div><i class="fa-solid fa-car"></i>&ensp;&nbsp;Cars</div>
+                    <div><i class="fa-solid fa-box-open"></i>&ensp;&nbsp;Packages</div>
+                    <div><i class="fa-solid fa-umbrella-beach"></i>&ensp;&nbsp;Holiday activities</div>
+                    <div>Deals</div>
+                    <div>Groups & meetings</div>
+                    <div>Mobile</div>
+                </div>
+            </div>
                                 
 </body>
 </html>
-<script>
-  /* var btn=  document.querySelector("#phn")
-  btn.addEventListener("click",function(){
-      var inp=document.createElement("input");
-     inp.setAttribute("id","phn1")
-
-      document.querySelector("#phn").append(inp)
-
-  }) */
-</script>
+<script src="pop.js"></script>
+ 
 
 
 
 
 
 
-<!-- color: #FFFFFF;
-    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%); -->

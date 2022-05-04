@@ -45,15 +45,15 @@
     width: 22%;
    padding: 0px 30px;
     margin-right: 60px;
-    justify-content: space-evenly;
+   justify-content: space-around;
 }
 #control>div{
     display: flex;
     /* border: 1px solid black; */
     font-size: 13px;
     font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 650;
-    color:  #343B53;
+    font-weight: 500;
+    color: #343B53;
     align-items: center; 
 }
 #control>div:last-child{
@@ -63,12 +63,7 @@
   margin-right: 10px;
   padding: 2px 0px 0px 0px ;
 }
-#control>div:nth-child(2){
-  margin-right: -20px;
-}
-#control>div:nth-last-child(2){
-   margin-right: -90px;
-}
+
 #control>div:hover{
     color: blue;
     cursor: pointer;
@@ -76,6 +71,6 @@
 
 
 #control>div>i{
-    /* padding: 2px 0px 0px 0px ; */
-    font-size: 16px;
+    padding: 2px 0px 0px 0px ;
+    font-size: 15px;
 }

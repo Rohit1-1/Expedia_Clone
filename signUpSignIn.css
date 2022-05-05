@@ -74,7 +74,7 @@
         color: blue;
     }
 
-    button{
+   button{
         display: block;
         margin: auto;
         width: 72%;
@@ -85,6 +85,10 @@
         font-weight: 500;
         padding: 21px 0px;
         border-radius: 10px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: rgba(12, 16, 209, 0.89);
     }
 
     button+div{
@@ -108,73 +112,22 @@
         position: relative;
         border: 1px solid black;
     } */
-    .pass{
-        position: relative;
-        /* border: 1px solid black; */
-       
-    }
-    #seen{
-        position: absolute;
-        right: 80px;
-        top: 18px;     
-    }
-    #seen>i{
-        color: #303135;
-        
-    }
-    #seen>i:hover{
-        cursor: pointer;
-    }
-                          /* signIn-pop-Styling */
-    .signIn-pop{
-        width: 31%;
-        margin: auto;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-        padding: 16px;
-        background-color: #ffff;
-        position: absolute;
-        top: 61px;
-        right: 55px;
-        border-radius: 10px;
-        opacity: 0;
-        pointer-events: none;
-    }
-    .show-singbar{
-     opacity: 1;
-        pointer-events:auto;
-     }
-    hr{
-        width: 100%;
-    }
-    .signIn-pop>p{
-     font-weight: 500;
-     color: #141D38;
-     margin-left:2.6%;
-    }
-    .signIn-pop>h1,h2{
-     color: #141D38;
-     margin-bottom: 20px;
-     font-weight: 500;
-     font-size: 20px;
-     text-align: center;
-     font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
-    .signIn-pop>button{
-        display: block;
-        color: white;
-        border: none;
-        margin: auto;
-        background-color: rgb(54, 115, 228);
-        width: 90%;
-        padding: 11px;
-        margin-bottom: 31px;
-        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        border-radius: 8px;
-        font-weight: 500;
-        font-size: 15px;
-    }
-    .signIn-pop>button:hover{
-        cursor: pointer;
-        background-color: rgb(3, 44, 228);
-    }
-                                     /* signIn-pop-Styling  END!*/
+    
+.pass{
+    position: relative;
+    /* border: 1px solid black; */
+   
+}
+#seen{
+    position: absolute;
+    right: 80px;
+    top: 18px;     
+}
+#seen>i{
+    color: #303135;
+    
+}
+#seen:hover{
+    cursor: pointer;
+}
+   

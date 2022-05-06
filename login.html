@@ -18,21 +18,27 @@
         <img src="https://www.expedia.co.in/_dms/interstitial/logo.svg?locale=en_GB&siteid=27" alt="">
     </div>
     </div>
+
+    <!-- <div id="show-alert">Something went wrong! Incorrect email or password</div> -->
     <div id="singupform-cont">
         <div class="h1-cont">
             <h1>Sign in</h1>
         </div>
             <form id="LoginForm">
     
-            <label></label>
-            <input type="text" placeholder="Email adderss">
+              
+            <input id="email" class="error" type="text" placeholder="Email adderss">
+          
          
+          
             <div class="pass">
-                <label></label>
-                <input id="passwrd" type="password" placeholder="Password">
+               
+                <input id="passwrd" class="error" type="password" placeholder="Password">
+               
                 <div><i id="seen" class="fa-solid fa-eye"></i></div>
               </div>
-              <input id="login" type="SUBMIT" value="Continue"">
+              <p id="alert"></p>
+              <input id="login" type="submit" value="SIGN IN">
             </form>                  
          
             <div>Don't have an account?  <a href="signUp.html">Create one</a></div>
@@ -41,4 +47,84 @@
     </div>
 </body>
 </html>
-<script src="response.js"></script>
+<script>
+    var passIn=document.querySelector("#passwrd");
+var seePass=document.querySelector("#seen");
+seePass.addEventListener("click",function(){
+    var type=passIn.getAttribute("type")
+    if(type==="password"){
+        type="text";
+    }
+    else{
+        type="password"
+    }
+ 
+   console.log(type)
+    passIn.setAttribute("type",type)
+
+   this.classList.toggle("fa-eye-slash")
+    // console.log("I'm in")
+
+})
+
+var arrow=document.querySelector("#arrow").addEventListener("click",function(){
+    window.history.back();
+})
+
+              // LOGIN PRocesss////////
+
+              var getUserData=JSON.parse(localStorage.getItem("SignUpData"));
+            //   console.log(getUserData)
+
+var loginForm=document.querySelector("form");
+var inpt=document.querySelectorAll(".error")
+var p= document.querySelector("#alert")
+var pEml= document.querySelector("#p-email")
+var pWrd= document.querySelector("#pss-wrd")
+
+loginForm.addEventListener("submit",function(){
+   event.preventDefault();
+//    console.log("hello")
+   var LoginData={
+       email:loginForm.email.value,
+      
+       passwrd:loginForm.passwrd.value,
+   }
+// console.log(LoginData)
+
+if( LoginData.email===""||LoginData.passwrd===""){
+ 
+ p.innerText="Please Fill All The Information !";
+ 
+ inpt.forEach(function(inpt){
+    inpt.style.borderColor="red";
+    inpt.style.borderWidth="2px"
+ })
+ 
+}
+else{
+    var flag=false;
+    var flagpass
+    for(var i=0;i<getUserData.length;i++){
+        console.log(LoginData.email)
+    if(LoginData.email===getUserData[i].email&&LoginData. passwrd===getUserData[i]. passwrd){
+       flag=true;
+       flagpass=true;
+    }
+  
+
+}
+   if(flag!==true&&flagpass!==true){
+     
+    alert("Something went wrong! Incorrect email or password!")
+   
+   }
+   else{
+    alert("login succsee")
+   }
+
+}
+
+})
+
+</script>

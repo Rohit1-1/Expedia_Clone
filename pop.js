@@ -66,9 +66,11 @@ triger_lang.addEventListener("click",function(e){
 var lang_btn=document.querySelector("#language-btn");
 var sve_close=document.querySelector("#save").addEventListener("click",function(){
   triger_lang.classList.remove("triger-bg")
+  bodd.style.position="unset";
 })
 var Lbtn_cross=document.querySelector("#cross-btn").addEventListener("click",function(){
   triger_lang.classList.remove("triger-bg")
+  bodd.style.position="unset";
 })
 
 lang_btn.addEventListener("click",function(e){

@@ -13,7 +13,7 @@ seePass.addEventListener("click",function(){
     passIn.setAttribute("type",type)
 
    this.classList.toggle("fa-eye-slash")
-    console.log("I'm in")
+    // console.log("I'm in")
 
 })
 
@@ -23,7 +23,9 @@ var arrow=document.querySelector("#arrow").addEventListener("click",function(){
 
 // SAVING USER DETAIL///////////////////
 
-var signUp_data=document.querySelector("#singForm");
+var signUp_data=document.querySelector("form");
+var inpt=document.querySelectorAll(".error")
+
 
 var signUpData=JSON.parse(localStorage.getItem("SignUpData"))||[]
 signUp_data.addEventListener("submit",function(){
@@ -37,7 +39,13 @@ var SupData={
 signUpData.push(SupData)
 if(SupData.email===""||SupData.Fname===""||SupData.Sname===""||SupData.passwrd===""){
  var p= document.querySelector("#alert")
- p.innerText="Please Fill All Information !";
+ p.innerText="Please Fill All The Information !";
+ 
+
+ inpt.forEach(function(inpt){
+    inpt.style.borderColor="red";
+    inpt.style.borderWidth="2px"
+ })
  
  
 }
@@ -45,13 +53,15 @@ else{
 localStorage.setItem("SignUpData",JSON.stringify(signUpData))
 var p= document.querySelector("#alert")
 p.innerText="";
-console.log(signUpData)
+
+
+ inpt.forEach(function(inpt){
+    inpt.style.borderColor="unset";
+    inpt.style.borderWidth="1px"
+ })
+ alert("Sign Up Successful !")
+// console.log(signUpData)
 }
 })
 
 
-              // LOGIN PRocesss////////
-
-    var getData=JSON.parse(localStorage.getItem("SignUpData"));
-
-     var

@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="popUp.css">
+  
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
   <style>
+  
 
   </style>
 </head>
@@ -30,7 +32,7 @@
       <div id="language-btn"><i class="fa-solid fa-globe"></i>&ensp;ENGLISH</div>
       <div>Support</div>
       <div>Trips</div>
-      <div>Sign In</div>
+      <div id="sign-in">Sign In</div>
     </div>
     </div>
            <!-- **************************************NavBar END! *************************************************-->
@@ -96,7 +98,7 @@
             <button id="cntrycode">Country code&ensp;<i class="fa-solid fa-angle-down"></i></button>
                <form id="form">  
                    
-                    <input type="number" placeholder="Phone number">
+                    <input type="number" placeholder="Phone number" maxlength="4">
                           
                </form>
                
@@ -171,56 +173,72 @@
             <div id="end">
                 <p>© 2022 Expedia, Inc., an Expedia Group company / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte. Ltd. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
             </div>
-                            <!-- LAST SECTION END -->
-                    
-                               <!-- POP UP WINDOW  -->
+            <!-- /*   LAST SECTION END */ -->
 
-              <div class="popup-Mt">
-                <div class="popUp-cont">
-                    <div><i class="fa-solid fa-hotel"></i>&ensp;&nbsp;Stays</div>
-                    <div><i class="fa-solid fa-plane-departure"></i>&ensp;&nbsp;Flights</div>
-                    <div><i class="fa-solid fa-car"></i>&ensp;&nbsp;Cars</div>
-                    <div><i class="fa-solid fa-box-open"></i>&ensp;&nbsp;Packages</div>
-                    <div><i class="fa-solid fa-umbrella-beach"></i>&ensp;&nbsp;Holiday activities</div>
-                    <div>Deals</div>
-                    <div>Groups & meetings</div>
-                    <div>Mobile</div>
-                </div>
-            </div>
 
-                         <!-- POP UP WINDOW  For MoRe Travle END-->
+                               <!-- POP UP WINDOW  For MoRe Travle Start-->
 
-                                          <!-- POP UP WINDOW  For MoRe Travle END-->
-                         <div class="for-bg">
+                  <div class="popUp-cont">
+                      <div><i class="fa-solid fa-hotel"></i>&ensp;&nbsp;Stays</div>
+                      <div><i class="fa-solid fa-plane-departure"></i>&ensp;&nbsp;Flights</div>
+                      <div><i class="fa-solid fa-car"></i>&ensp;&nbsp;Cars</div>
+                      <div><i class="fa-solid fa-box-open"></i>&ensp;&nbsp;Packages</div>
+                      <div><i class="fa-solid fa-umbrella-beach"></i>&ensp;&nbsp;Holiday activities</div>
+                      <div>Deals</div>
+                      <div>Groups & meetings</div>
+                      <div>Mobile</div>
+                  </div>
+                
+           
+                          <!-- POP UP WINDOW  For MoRe Travle END-->
+
+
+                          
+                     <!-- POP UP WINDOW  Globe Start-->
+        <div class="for-bg">
                               
-                            <div class="slectRL">
-                              <div class="dis-cont"><button id="cross-btn">&times;</button>&nbsp;&ensp;<p> Display Setting</p></div>
-                              <div id="info"><i class="fa-solid fa-circle-info"></i><p>You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p> </div>
-                              <select name="" id="region"> 
-                                  <option >Region</option>
-                                  <option value="Goa">Goa</option>
-                                  <option value="Tamilnadu">Tamilnadu</option>
-                                  <option value="Mumbai">Mumbai</option>
-                                  <option value="Maldives">Maldives</option>
-                              </select>
-                              <select name="" id="language">
-                                <option value="Goa"></option>
-                                <option value="Tamilnadu"></option>
-                                <option value="Mumbai"></option>
-                                <option value="Maldives"></option>
-                              </select>
-                              <button id="save">Save</button>
-                          </div>
-                                        </div>
-              
+              <div class="slectRL">
+                <div class="dis-cont"><button id="cross-btn">&times;</button>&nbsp;&ensp;<p> Display Setting</p></div>
+                <div id="info"><i class="fa-solid fa-circle-info"></i><p>You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p> </div>
+                <select name="" id="region"> 
+                    <option >Region</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Maldives">Maldives</option>
+                </select>
+                <select name="" id="language">
+                  <option value="Goa"></option>
+                  <option value="Tamilnadu"></option>
+                  <option value="Mumbai"></option>
+                  <option value="Maldives"></option>
+                </select>
+                <button id="save">Save</button>
+            </div>
+         </div>
+                      <!-- POP UP WINDOW  Globe END!-->
+
+
+                    <!-- POP UP WINDOW  Sign in START!-->
+        <div class="signIn-pop">
+                <h1>Members can access discounts and special features.</h1>
+                <button id="redt-signIn">Sign in</button>
+               <h2>Don't have an account?</h2>
+                <button id="redt-signUp">Create one</button>
+                <hr>
+                 <p>Expedia!</p>
+        </div>
+                      <!-- POP UP WINDOW  Sign in END!-->
+
                                 
 </body>
 </html>
 <script src="pop.js"></script>
- 
 
 
 
 
 
 
+<!-- color: #FFFFFF;
+    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%); -->

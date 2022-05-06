@@ -65,13 +65,16 @@
         align-items: center;
         padding: 0px 9px;
     }
+    #arrow:hover{
+        cursor: pointer;
+    }
 
     #arrow>i{
         font-size: 21px;
         color: blue;
     }
 
-    button{
+   button{
         display: block;
         margin: auto;
         width: 72%;
@@ -82,6 +85,10 @@
         font-weight: 500;
         padding: 21px 0px;
         border-radius: 10px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: rgba(12, 16, 209, 0.89);
     }
 
     button+div{
@@ -105,21 +112,22 @@
         position: relative;
         border: 1px solid black;
     } */
-    .pass{
-        position: relative;
-        /* border: 1px solid black; */
-       
-    }
-    #seen{
-        position: absolute;
-        right: 80px;
-        top: 18px;     
-    }
-    #seen{
-        color: #303135;
-        
-    }
-    #seen:hover{
-        cursor: pointer;
-    }
-
+    
+.pass{
+    position: relative;
+    /* border: 1px solid black; */
+   
+}
+#seen{
+    position: absolute;
+    right: 80px;
+    top: 18px;     
+}
+#seen>i{
+    color: #303135;
+    
+}
+#seen:hover{
+    cursor: pointer;
+}
+   

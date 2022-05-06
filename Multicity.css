@@ -1,0 +1,76 @@
+.page>button:nth-child(2){
+    border-bottom: 2px solid #3662D8;
+    color: #3662D8;
+}
+.select_button{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.select_button>div{
+    display: flex;
+    gap: 5px;
+}
+.select_button>div:first-child>div{
+    padding: 12px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.select_button>div:nth-child(1)>div:nth-child(3){    
+    background-color: #e0e7f7;
+}
+.select_button>div:first-child>div:nth-child(3)>a{
+    color: #3662D8;
+}
+.select_button>div:first-child>div>a{
+    text-decoration: none;
+    color: black;
+}
+.select_button>div:first-child>div:hover{
+    background-color: #e0e7f7;
+}
+.select_button>div:first-child>div>a:hover{
+    color: #3662D8;
+}
+.select_button>div:last-child>div{
+    padding: 12px 15px;
+    cursor: pointer;
+    color: #3662D8;
+}
+.select_button>div:last-child>div>h4{
+    font-weight: 500;
+}
+.select_button>div:last-child>div>h4:hover{
+    text-decoration: underline;
+}
+.input_button>button:nth-child(1){
+    padding: 10px 0px;
+    width: 40%;      
+}
+.input_button>button:nth-child(2){
+    padding: 10px 0px;
+    width: 40%;         
+}
+.input_button>button:nth-child(3){
+    padding: 10px 0px;
+    width: 15%;
+}
+.input_button>button:hover{
+    cursor: pointer;
+}
+.flightname{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.flightname>h4{
+    padding: 10px;
+    font-weight: 500;
+}

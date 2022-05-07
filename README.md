@@ -4,7 +4,7 @@
 
 # Expedia is one of the fastest growing online travel portals in Asia, offering travellers an extensive selection of hotels, activities and travel services to meet every budget and activities of every kind at competitive rates.
 
-Team Members 🤝
+# Team Members 🤝
 - [Rohit Kumar](https://github.com/Rohit1-1) 
 - [Saurabh Pagrut](https://github.com/SaurabhPagrut)
 - [Sanket Paharia](https://github.com/SanketPaharia)

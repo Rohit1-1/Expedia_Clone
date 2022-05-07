@@ -9,8 +9,9 @@
  bodyr.addEventListener("click",function(e){
   if(e.target!==bodyr)return;
   else{
-  callpop.classList.remove("triger-pop")
-  show_sinbar.classList.remove("show-singbar")
+  callpop.classList.remove("triger-pop");
+  show_sinbar.classList.remove("show-singbar");
+  aftre_logn.classList.remove("show-login");
  
   }
 
@@ -92,11 +93,47 @@ bodd.style.position="fixed"
                                    // SIGIN FUNCTIONALITY START//
 
 var sign_triger=document.querySelector("#sign-in");
-var show_sinbar=document.querySelector(".signIn-pop")
+console.log(sign_triger.innerText)
 
+// Reflect User Nmae
+
+var show_sinbar=document.querySelector(".signIn-pop")
+var aftre_logn=document.querySelector(".After-login");
+var getUsername=JSON.parse(localStorage.getItem("Username"));
+var hiname=document.querySelector("#User-Id");
+var email_id=document.querySelector("#email-Id")
+if(getUsername!==null){
+  
+  sign_triger.innerText=getUsername;
+ 
+  sign_triger.style.fontSize="16px"
+  
+ 
+}
+
+var getLogin=JSON.parse(localStorage.getItem("loginData"))
+document.querySelector("#signOut").addEventListener("click",function(){
+  localStorage.removeItem("loginData");
+  localStorage.removeItem("Username");
+  window.location.reload();
+
+})
 sign_triger.addEventListener("click",function(){
   countsign++;
   console.log(countsign)
+  if(getUsername!==null){
+    if( countsign%2!==0){
+      
+      hiname.innerText="Hi,"+getLogin.Fname;
+      email_id.innerText=getLogin.email
+    aftre_logn.classList.add("show-login");
+    }
+    else
+    {
+      aftre_logn.classList.remove("show-login")
+    }
+  }
+    else{
   
   if( countsign%2!==0){
     show_sinbar.classList.add("show-singbar")
@@ -109,7 +146,7 @@ count=0;
   {
     show_sinbar.classList.remove("show-singbar")
   }
- 
+}
   // console.log("hiiii")
 })
 

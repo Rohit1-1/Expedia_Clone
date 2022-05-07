@@ -150,3 +150,33 @@
     font-weight: 600;
 }
    
+.show-alert{      
+    justify-content: center;
+     /* border: 1px solid black; */
+     padding: 14px 10px;
+     width: 30%;
+     margin: auto;
+     opacity: 0;
+     margin-top: 20px;
+     pointer-events: none;
+     /* position: absolute; */
+     display: none;     
+     background-color: rgba(220,38,38);   
+     border-radius: 10px; 
+     color: white;
+     font-weight: 600;
+     font-size: 16px;
+     
+  }
+  .show-alert>p{
+      margin-left: 10px;
+  }
+  .visible-alert{
+    display: flex !important;;
+    opacity: 1;
+    transition: top .3s ease; 
+     pointer-events:auto;
+  }
+
+
+  

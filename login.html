@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="signUpSignIn.css">
     <title>Sign In</title>
     <style>
-    
+   
     </style>
 </head>
 <body>
@@ -20,7 +20,9 @@
     </div>
 
     <!-- <div id="show-alert">Something went wrong! Incorrect email or password</div> -->
+    <div class="show-alert"><i class="fa-solid fa-circle-info"></i><p>Something went wrong! Incorrect email or password!</p> </div>
     <div id="singupform-cont">
+       
         <div class="h1-cont">
             <h1>Sign in</h1>
         </div>
@@ -37,7 +39,7 @@
                
                 <div><i id="seen" class="fa-solid fa-eye"></i></div>
               </div>
-              <p id="alert"></p>
+              <div id="alert"></div>
               <input id="login" type="submit" value="SIGN IN">
             </form>                  
          
@@ -47,84 +49,6 @@
     </div>
 </body>
 </html>
-<script>
-    var passIn=document.querySelector("#passwrd");
-var seePass=document.querySelector("#seen");
-seePass.addEventListener("click",function(){
-    var type=passIn.getAttribute("type")
-    if(type==="password"){
-        type="text";
-    }
-    else{
-        type="password"
-    }
- 
-   console.log(type)
-    passIn.setAttribute("type",type)
+<script src="login.js"></script>
 
-   this.classList.toggle("fa-eye-slash")
-    // console.log("I'm in")
-
-})
-
-var arrow=document.querySelector("#arrow").addEventListener("click",function(){
-    window.history.back();
-})
-
-              // LOGIN PRocesss////////
-
-              var getUserData=JSON.parse(localStorage.getItem("SignUpData"));
-            //   console.log(getUserData)
-
-var loginForm=document.querySelector("form");
-var inpt=document.querySelectorAll(".error")
-var p= document.querySelector("#alert")
-var pEml= document.querySelector("#p-email")
-var pWrd= document.querySelector("#pss-wrd")
-
-loginForm.addEventListener("submit",function(){
-   event.preventDefault();
-//    console.log("hello")
-   var LoginData={
-       email:loginForm.email.value,
-      
-       passwrd:loginForm.passwrd.value,
-   }
-// console.log(LoginData)
-
-if( LoginData.email===""||LoginData.passwrd===""){
- 
- p.innerText="Please Fill All The Information !";
- 
- inpt.forEach(function(inpt){
-    inpt.style.borderColor="red";
-    inpt.style.borderWidth="2px"
- })
- 
-}
-else{
-    var flag=false;
-    var flagpass
-    for(var i=0;i<getUserData.length;i++){
-        console.log(LoginData.email)
-    if(LoginData.email===getUserData[i].email&&LoginData. passwrd===getUserData[i]. passwrd){
-       flag=true;
-       flagpass=true;
-    }
   
-
-}
-   if(flag!==true&&flagpass!==true){
-     
-    alert("Something went wrong! Incorrect email or password!")
-   
-   }
-   else{
-    alert("login succsee")
-   }
-
-}
-
-})
-
-</script>

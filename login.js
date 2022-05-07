@@ -42,7 +42,11 @@ loginForm.addEventListener("submit",function(){
        passwrd:loginForm.passwrd.value,
    }
 // console.log(LoginData)
+if( getUserData==null){
+    alert("User Not Eixt")
+}
 
+else{
 if( LoginData.email===""||LoginData.passwrd===""){
  
  p.innerText="Please Fill All The Information !";
@@ -85,6 +89,7 @@ else{
    
    }
 
+}
 }
 
 })

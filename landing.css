@@ -197,12 +197,14 @@
   
     }
     #text-content>p{
-    line-height: 21px;
-    font-size: 14px;
-    font-family: 'Quicksand', sans-serif;
-   font-weight: 530;
-   width: 50%;
-    }
+        line-height: 21px;
+        font-size: 14px;
+        font-family: 'Quicksand', sans-serif;
+        color: #FFFFFF;
+       font-weight: 530;
+       width: 50%;
+       text-align: unset !important;
+        }
     #text-content>h1{
    
     font-size: 36px;
@@ -326,6 +328,7 @@ width: 65%;
        margin-bottom: 28px;
        margin-top: 8px;
        font-weight: 400;
+       text-align: unset;
      
     font-size: 14px;
     }
@@ -350,6 +353,7 @@ width: 65%;
         text-shadow: none;
         font-size: 12px;
         line-height: 18px;
+        text-align: unset;
     }
   #Qr-logo{
    

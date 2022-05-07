@@ -60,6 +60,7 @@ p.innerText="";
     inpt.style.borderWidth="1px"
  })
  alert("Sign Up Successful !")
+ window.location.href="login.html"
 // console.log(signUpData)
 }
 })

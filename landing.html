@@ -75,7 +75,12 @@
      color: white;
      font-size: 11px;
  }
-
+ 
+#prsn{
+    position: absolute;
+    right: 28%;
+    top: 11px;
+}
 
 
   </style>
@@ -112,18 +117,26 @@
             <button>Things To Do</button>
           
         </div>
+      
         <hr>
-        <div class="input_button">
-            <button><div class="icon"><i class="fa-solid fa-location-dot"></i></div><div>Going To</div></button>
-            <button>&ensp;<div  class="icon"><i class="fa-solid fa-calendar-day"></i></div>&ensp;<div>Check-in</div></button>
-            <button>&ensp;<div  class="icon"><i class="fa-solid fa-calendar-day"></i></div>&ensp;<div>Check-out</div></button>
-            <button>&ensp;<div  class="icon"><i class="fa-solid fa-user"></i></div>&ensp;<div> Travellers</div></button>
+    <div class="input_button">
+        <div id="location"><i class="fa-solid fa-location-dot"></i></div>
+        <input class="button1" type="text" placeholder="Going To"></input>
+        
+        <div id="chk-in"><i class="fa-solid fa-calendar-day"></i></div>
+        <input class="button2"  onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Check in"></input>
+       
+        <div id="chk-out"><i class="fa-solid fa-calendar-day"></i></div>
+        <input class="button3" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Check out"></input>
+       
+       <div id="prsn"><i class="fa-solid fa-user"></i></div>
+        <input class="button4"  placeholder="Travellers"></input>        
         </div>
         <div class="checkbox">
             <div><input type="checkbox" id="add-flight">&ensp;&nbsp;<div>Add a flight</div> </div>
             <div><input type="checkbox" id="add-car">&ensp;&nbsp;<div>Add a cars</div></div>
-        </div>
-        <!-- <div></div> -->
+     </div>
+      
         <button id="srchButton">Search</button>       
     </div>
                                     <!-- /* Top SEction End !*/ -->

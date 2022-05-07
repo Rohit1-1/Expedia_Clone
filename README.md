@@ -1,6 +1,6 @@
 # Expedia
 
-# This clone is made with pure HTML, CSS , Javascript, 😇
+# This clone is made by using  HTML, CSS , Javascript,DOM, Localstorage 😇
 
 # Expedia is one of the fastest growing online travel portals in Asia, offering travellers an extensive selection of hotels, activities and travel services to meet every budget and activities of every kind at competitive rates.
 

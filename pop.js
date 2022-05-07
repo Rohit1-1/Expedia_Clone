@@ -169,6 +169,17 @@ signUp_redirect.addEventListener("click",function(){
 
 
 
+// Redirecting-Hotel's page
+
+var srchbtn=document.querySelector("#srchButton").addEventListener("click",function(){
+  if(getUsername!==null){
+  window.location.href="hotel_info.html";
+  }
+  else{
+    alert("Please Sign in First")
+    window.location.href="login.html";
+  }
+})
 
 
 

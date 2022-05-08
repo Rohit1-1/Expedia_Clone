@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXPEDIA-FLIGHT-OneWay</title>
+    <title>EXPEDIA</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="popUp.css">
@@ -15,13 +15,80 @@
   
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
   <style>
-  
+ .After-login{
+     width: 25%;
+     margin: auto;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 11px;
+    position: absolute;
+    top: 61px;
+    right: 55px;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+ }
+
+ .show-login{
+    opacity: 1;
+    pointer-events:auto;
+ }
+ .After-login>hr+p{
+    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%);
+    font-weight: 600;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ }
+ .After-login>h3,p{
+     text-align: center;
+     margin-bottom: 15px;
+     text-shadow: none;
+     color: black;
+ }
+ .After-login>h3{
+    margin-bottom: 8px !important;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    color: #141D38;
+ }
+ #email-Id{
+     color: gray;
+     font-weight: 600;
+ }
+ #signOut{
+     color: gray;
+     font-weight: 600;
+     text-decoration: underline;
+   
+ }
+ #signOut:hover{
+     color: blue;
+     cursor: pointer;
+ }
+
+ 
+ #member{
+     display: block;
+     margin: auto;
+     margin-bottom: 15px;
+     padding: 9px;
+     border-radius: 16px;
+     border: none;
+     background-color: blue;
+     color: white;
+     font-size: 11px;
+ }
+ 
+#prsn{
+    position: absolute;
+    right: 28%;
+    top: 11px;
+}
+
 
   </style>
 </head>
 <body>
-                             <!-- NavBar Start -->
-    <div id="navbarContanier">
+                             <!-- NavBar Start !-->
+       <div id="navbarContanier">
         <div id="navlogocont">
             <div id="logo">
                 <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
@@ -51,11 +118,12 @@
             <button>Things To Do</button>
           
         </div>
+      
         <hr>
         <div class="select_button">
             <div>
                 <div><a href="./flights.html">Return</a></div>
-                <div><a href="">One-way</a></div>
+                <div><a href="./Oneway.html">One-way</a></div>
                 <div><a href="./Multicity.html">Multi-city</a></div>
             </div>
             <div>
@@ -63,13 +131,24 @@
                 <div><h4>Economy <i class="fa-solid fa-angle-down"></i></h4></div>
             </div>
         </div>
-        <div class="input_button">
-            <button><div class="icon"><i class="fa-solid fa-location-dot"></i></div><div>Leaving From</div></button>
-            <button><div class="icon"><i class="fa-solid fa-exchange"></i></div></button>
-            <button><div class="icon"><i class="fa-solid fa-location-dot"></i></div><div>Going To</div></button>
-            <button>&ensp;<div  class="icon"><i class="fa-solid fa-calendar-day"></i></div>&ensp;<div>Departing</div></button>
+    <div class="input_button">
+        <div id="location"><i class="fa-solid fa-location-dot"></i></div>
+        <input class="button1" type="text" placeholder="Going To"></input>
+        
+        <div id="chk-in"><i class="fa-solid fa-calendar-day"></i></div>
+        <input class="button2"  onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Check in"></input>
+       
+        <div id="chk-out"><i class="fa-solid fa-calendar-day"></i></div>
+        <input class="button3" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Check out"></input>
+       
+       <div id="prsn"><i class="fa-solid fa-user"></i></div>
+        <input class="button4"  placeholder="Travellers"></input>        
         </div>
-        <!-- <div></div> -->
+        <div class="checkbox">
+            <div><input type="checkbox" id="add-flight">&ensp;&nbsp;<div>Add a flight</div> </div>
+            <div><input type="checkbox" id="add-car">&ensp;&nbsp;<div>Add a cars</div></div>
+     </div>
+      
         <button id="srchButton">Search</button>       
     </div>
                                     <!-- /* Top SEction End !*/ -->
@@ -210,16 +289,47 @@
                 <div id="info"><i class="fa-solid fa-circle-info"></i><p>You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p> </div>
                 <select name="" id="region"> 
                     <option >Region</option>
-                    <option value="Goa">Goa</option>
-                    <option value="Tamilnadu">Tamilnadu</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Maldives">Maldives</option>
+                    <option value="India">India</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Belgium">Belgium</option>
+                 
+                    <option value="Brazil">Brazil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="China">China</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                 
+                    <option value="Philippines">Philippines</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Norway">Norway</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Hong Kong SAR">Hong Kong SAR</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Denmark">Denmark</option>
                 </select>
                 <select name="" id="language">
-                  <option value="Goa"></option>
-                  <option value="Tamilnadu"></option>
-                  <option value="Mumbai"></option>
-                  <option value="Maldives"></option>
+                  <option >Language</option>
+                  <option value="English">English</option>
+                  <option value="Português">Português</option>
+                  <option value="Français">Français</option>
+                  <option value="Suomi">Suomi</option>
+                  <option value="Español">Español</option>
+                  <option value="Nederlands">Nederlands</option>
                 </select>
                 <button id="save">Save</button>
             </div>
@@ -236,6 +346,15 @@
                 <hr>
                  <p>Expedia!</p>
         </div>
+        <div class="After-login">
+                <h3 id="User-Id">Hi, Rohit</h3>
+              
+               <p id="email-Id">rajr54827@gmail.com</p>
+               <button id="member">Blue Member</button>
+               <p id="signOut">Sign Out</p> 
+                <hr>
+                 <p>Expedia!</p>
+        </div>
                       <!-- POP UP WINDOW  Sign in END!-->
 
                                 
@@ -247,6 +366,3 @@
 
 
 
-
-<!-- color: #FFFFFF;
-    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%); -->

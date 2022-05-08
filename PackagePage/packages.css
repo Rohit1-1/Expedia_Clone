@@ -33,9 +33,6 @@
     
           
       }
-      #logo:hover{
-          cursor: pointer;
-      }
       .page>button:hover{
           /* border-bottom: #3662D8; */
           cursor: pointer;
@@ -55,88 +52,58 @@
       .input_button{
         /* border: 1px solid black;  */
           display:flex;
-          width: 89%;
-      position: relative;
+          width: 90%;
+       
           margin: auto;
       }
-      #location{
-        position: absolute;
-        left:5px;
-        top: 10px;
-        /* font-size: 13px; */
-        /* padding: 1.6px; */
-        display: flex;
-        align-items: center;
-        color: rgb(32, 30, 30);
-    }
-    
-    #chk-in{
-        position: absolute;
-      right:68.8%;
-        top: 10px;
-      /* font-size: 13px; */
-      /* padding: 1.6px; */
-      display: flex;
-      align-items: center;
-      color: rgb(32, 30, 30);
-       
-    }
-    #chk-out{
-        position: absolute;
-        right: 48.5%;
-        top: 10px;
+      .input_button>button{
+          border: 1.5px solid  #727483;
+          background-color: white;
+          display: block;
+          margin: auto;
+          display: flex;
+          border-radius: 8px;
+          
       }
-     
-      .input_button>.button1{
-         padding: 10.2px 21px;
-        width: 24%;
-        border: 1.5px solid  #727483;
-      
-       margin-right: 8px;
-        border-radius: 8px;
-        
+      .input_button>button:nth-child(1){
+         padding: 10.2px 0px;
+        width: 30%;
               
       }
-      .input_button>.button2{
-          padding: 10px 21px;
-        width: 15%;
-        border: 1.5px solid  #727483;
-         
-        display: block;
-        margin: auto;
-        display: flex;
-        border-radius: 8px;
+      .input_button>button:nth-child(2){
+          padding: 10px 0px;
+        width: 30%;
        
-      
           
       }
-      .input_button>.button3{
-          padding: 10px 21px;
+      .input_button>button:nth-child(3){
+          padding: 10px 0px;
         width: 15%;
-        border: 1.5px solid  #727483;
-         
-        display: block;
-        margin: auto;
-        display: flex;
-        border-radius: 8px;
-       
                 
       }
-      .input_button>.button4{
-          padding: 10px 21px;
-        width: 25%;
-        border: 1.5px solid  #727483;
-         
-        display: block;
-        margin: auto;
-        display: flex;
-        border-radius: 8px;
-       
-       
+      .input_button>button:nth-child(4){
+          padding: 10px 0px;
+        width: 15%;
           
       }
-    
-      
+      .input_button>button>.icon{
+        font-size: 18px;
+        /* font-weight: 700; */
+       margin-left: 5px;
+       padding: 2px 0px 0px 0px;
+       /* border: 1.5px solid  #727483; */
+       width: 10%;
+
+      }
+      .input_button>button>.icon+div{
+        font-size: 15px;
+        color: #5a5b63;
+        display: flex;
+        align-items: center;
+        /* border: 1.5px solid  #727483; */
+        padding: 3px 0px 0px 0px;
+
+      }
       .checkbox{
           display: flex;
           width: 29%;
@@ -227,14 +194,12 @@
   
     }
     #text-content>p{
-        line-height: 21px;
-        font-size: 14px;
-        font-family: 'Quicksand', sans-serif;
-        color: #FFFFFF;
-       font-weight: 530;
-       width: 50%;
-       text-align: unset !important;
-        }
+    line-height: 21px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+   font-weight: 530;
+   width: 50%;
+    }
     #text-content>h1{
    
     font-size: 36px;
@@ -358,7 +323,6 @@ width: 65%;
        margin-bottom: 28px;
        margin-top: 8px;
        font-weight: 400;
-       text-align: unset;
      
     font-size: 14px;
     }
@@ -383,7 +347,6 @@ width: 65%;
         text-shadow: none;
         font-size: 12px;
         line-height: 18px;
-        text-align: unset;
     }
   #Qr-logo{
    
@@ -460,121 +423,3 @@ width: 65%;
      
   }
                                      /* Mid_scetion END! */
-
-
-
-
-                                  /*   LAST SECTION START */
-    
-        #last-sec{
-        width: 100%;
-        margin-top: 50px;
-
-    }
-    
-    #last-sec>h3{
-      text-align: center;
-      font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 14px;     
-    color: #141D38;
-    font-weight: 500;
-        
-
-    }
-    #last-sec>a{
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 14px;
-      background-color: transparent;
-    color: #3662D8;
-    font-weight: 400;
-        
-
-    }
-    #cmpny-info{
-        width: 90%;    
-        /* border: 1px solid black; */
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        gap: 10px;
-    margin-top:45px;
-    }
-    #cmpny-info>div{
-      
-        /* border: 1px solid black; */
-        padding: 20px;
-    
-    }
-    #cmpny-info>div>a{
-      
-      display: block;
-      margin-top: 11px;
-      text-decoration: none;
-      font-size: 12px;
-      background-color: transparent;
-    color: #3662D8;
-    font-weight: 400;
-      
-    
-    }
-    #cmpny-info>div>a,h3{
-        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        
-    }
-    #cmpny-info>div>h3{
-        color: #141D38;
-        font-size: 14px;        
-   
-    font-weight: 500;
-    
-    }
-    #cmpny-info>div>a:hover{
-        text-decoration: underline;
-    }
-#hr{
-    
-    width: 90%;
-    color: rgb(75, 68, 68);
-    margin-bottom: 0px;
-}
-#last-logo-cont{
-    width: 90%;  
-    /* border: 1px solid black; */
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-}
-#last-logo-cont>div{
-    width: 16%;
-    padding: 0px 0px 10px 0px;
-    /* border: 1px solid black; */
-    margin-top: 20px;
-}
-#last-logo-cont>div>img{
-    width: 100%;
-    height: 100%;
-}  
-#end>p{
-    width: 91%;
-    font-size:12px;
-    color: #343B53;
-    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;
-    overflow-wrap: break-word;
-    margin: auto;
-    text-shadow: none;
-} 
-#end{
-    width: 95%;
-    margin: auto;
-    /* border: 1px solid black; */
-    margin-bottom: 51px;
-}                                  
-                                                /*   LAST SECTION END! */
-
-        

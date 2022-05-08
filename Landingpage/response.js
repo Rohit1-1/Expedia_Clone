@@ -11,7 +11,6 @@ seePass.addEventListener("click",function(){
  
    console.log(type)
     passIn.setAttribute("type",type)
-
    this.classList.toggle("fa-eye-slash")
     // console.log("I'm in")
 
@@ -60,7 +59,7 @@ p.innerText="";
     inpt.style.borderWidth="1px"
  })
  alert("Sign Up Successful !")
- window.location.href="login.html"
+ window.location.href="../Landingpage/login.html"
 // console.log(signUpData)
 }
 })

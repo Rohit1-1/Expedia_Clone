@@ -43,7 +43,7 @@ loginForm.addEventListener("submit",function(){
    }
 // console.log(LoginData)
 if( getUserData==null){
-    alert("User Not Eixt")
+    alert("User Not Exist !")
 }
 
 else{

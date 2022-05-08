@@ -46,7 +46,7 @@
 var expdia=document.querySelector("#logo");
 
 expdia.addEventListener("click",function(){
-  window.location.href="landing.html";
+  window.location.href="../Landingpage/landing.html";
 })
 
 
@@ -157,11 +157,11 @@ var signIn_redirect=document.querySelector("#redt-signIn");
 var signUp_redirect=document.querySelector("#redt-signUp");
 
 signIn_redirect.addEventListener("click",function(){
-  window.location.href="login.html"
+  window.location.href="../Landingpage/login.html"
 })
 
 signUp_redirect.addEventListener("click",function(){
-  window.location.href="signUp.html"
+  window.location.href="../Landingpage/signUp.html"
 })
 
                                 // SIGIN FUNCTIONALITY END//
@@ -173,11 +173,11 @@ signUp_redirect.addEventListener("click",function(){
 
 var srchbtn=document.querySelector("#srchButton").addEventListener("click",function(){
   if(getUsername!==null){
-  window.location.href="hotel_info.html";
+  window.location.href="../HotelPage/hotel_info.html";
   }
   else{
     alert("Please Sign in First")
-    window.location.href="login.html";
+    window.location.href="../Landingpage/login.html";
   }
 })
 

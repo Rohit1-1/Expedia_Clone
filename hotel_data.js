@@ -14,8 +14,8 @@ var hotelsDataObj=[
      hotelDesc:"Experience Goa's Romantic Beach-Cation ",
      hotelOffer:"Stay near Anjuna beach.Rate inclusive of breakfast, complimentary wine,daily hotel creditof INR 500,access to the pool. ",
      rating:"4.1/5 ",
-     hotelFees:"Rs5,176 ",
-     totalFees:"Rs5,797 total ",
+     hotelFees:"Rs 5,176 ",
+     totalFees:"Rs 5,797 total ",
     },
     {hotelPic:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/67000000/66040000/66031300/66031217/b97c090e_b.jpg ",
      hotelName:"The Westin Goa ",
@@ -23,8 +23,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now, pay later ",
      rating:"4.6/5 ",
-     hotelFees:"Rs13,800 ",
-     totalFees:"Rs16,284 total ",
+     hotelFees:"Rs 13,800 ",
+     totalFees:"Rs 16,284 total ",
     },
     {hotelPic:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/25000000/24060000/24057300/24057290/7d26f557_b.jpg ",
      hotelName:"Hilton Goa Resort ",
@@ -32,8 +32,8 @@ var hotelsDataObj=[
      hotelDesc:"Great Small Breaks: Perfect Staycation ",
      hotelOffer:"Fully refundable ",
      rating:"4.2/5 ",
-     hotelFees:"Rs11,699 ",
-     totalFees:"Rs13,805 total ",
+     hotelFees:"Rs 11,699 ",
+     totalFees:"Rs 13,805 total ",
     },
     {hotelPic:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/61000000/60650000/60643100/60643033/ea553c30_b.jpg ",
      hotelName:"Holiday Inn Goa Candolim ",
@@ -41,8 +41,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Book & save 10% on our Plunge Pool rooms ",
      rating:"3.0/5 ",
-     hotelFees:"Rs7,650 ",
-     totalFees:"Rs9,027 total ",
+     hotelFees:"Rs 7,650 ",
+     totalFees:"Rs 9,027 total ",
     },
     {hotelPic:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/25000000/24050000/24041500/24041444/6e5fde29_b.jpg ",
      hotelName:"Azaya Beach Resort ",
@@ -50,8 +50,8 @@ var hotelsDataObj=[
      hotelDesc:"A luxurious stay in Goa at the Benaulim Beach.Enjoy our nutrious breakfast and relax at the Spa. ",
      hotelOffer:"Fuly refundable, Reserve now and pay later ",
      rating:"4.1/5 ",
-     hotelFees:"Rs12,500 ",
-     totalFees:"Rs14,750 total ",
+     hotelFees:"Rs 12,500 ",
+     totalFees:"Rs 14,750 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/1000000/440000/438400/438378/bdbe16ac.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"The Leela Goa ",
@@ -59,8 +59,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now, pay later ",
      rating:"4.7/5 ",
-     hotelFees:"Rs18,500 ",
-     totalFees:"Rs21,830 total ",
+     hotelFees:"Rs 18,500 ",
+     totalFees:"Rs 21,830 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/3000000/2520000/2516300/2516280/48a085d5.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Novotel Goa Dona Sylvia Hotel ",
@@ -68,8 +68,8 @@ var hotelsDataObj=[
      hotelDesc:" ",
      hotelOffer:" ",
      rating:"4.3/5 ",
-     hotelFees:"Rs6,800 ",
-     totalFees:"Rs7,616 total ",
+     hotelFees:"Rs 6,800 ",
+     totalFees:"Rs 7,616 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/78000000/77160000/77152400/77152397/62365a46.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Sea Breeze Max Resort & Spa ",
@@ -77,8 +77,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now, pay later ",
      rating:" ",
-     hotelFees:"Rs3,500 ",
-     totalFees:"Rs3,920 total ",
+     hotelFees:"Rs 3,500 ",
+     totalFees:"Rs 3,920 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/1000000/890000/881600/881558/033247ff.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Kenilworth Resort & Spa ",
@@ -86,8 +86,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now, pay later ",
      rating:"4.0/5 ",
-     hotelFees:"Rs8,999 ",
-     totalFees:"Rs10,619 total ",
+     hotelFees:"Rs 8,999 ",
+     totalFees:"Rs 10,619 total ",
     },
     {hotelPic:"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/70000000/69560000/69551900/69551801/dd25faec_b.jpg ",
      hotelName:"Fairfield by Marriott Goa Benaulim ",
@@ -95,8 +95,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now,pay later ",
      rating:"4.4/5 ",
-     hotelFees:"Rs9,499 ",
-     totalFees:"Rs11,209 total ",
+     hotelFees:"Rs 9,499 ",
+     totalFees:"Rs 11,209 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/3000000/2710000/2703400/2703358/00a8ece2.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Vivanta Goa,Panaji ",
@@ -104,8 +104,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now,pay later ",
      rating:"4.6/5 ",
-     hotelFees:"Rs12,150 ",
-     totalFees:"Rs14,337 total ",
+     hotelFees:"Rs 12,150 ",
+     totalFees:"Rs 14,337 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/7000000/6250000/6244400/6244326/aee15893.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Coconut Creek ",
@@ -113,8 +113,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now,pay later ",
      rating:"4.5/5 ",
-     hotelFees:"Rs6,500 ",
-     totalFees:"Rs7,280 total ",
+     hotelFees:"Rs 6,500 ",
+     totalFees:"Rs 7,280 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/4000000/3090000/3084000/3083952/3706424f.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Beleza By The Beach ",
@@ -122,8 +122,8 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now,pay later ",
      rating:"4.3/5 ",
-     hotelFees:"Rs11,799 ",
-     totalFees:"Rs13,923 total ",
+     hotelFees:"Rs 11,799 ",
+     totalFees:"Rs 13,923 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/1000000/20000/16500/16418/efa5ddde.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Taj Holiday Village Resort & Spa ",
@@ -131,17 +131,17 @@ var hotelsDataObj=[
      hotelDesc:" ",
      hotelOffer:" ",
      rating:"4.3/5 ",
-     hotelFees:"Rs19,000 ",
-     totalFees:"Rs22,420 total ",
+     hotelFees:"Rs 19,000 ",
+     totalFees:"Rs 22,420 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/77000000/76030000/76025900/76025869/0dc876c4.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"Treebo Trend Aulakhs ",
      hotelTag:"Mandrem ",
      hotelDesc:"Fully refundable ",
      hotelOffer:"Reserve now, pay later ",
-     rating:" ",
-     hotelFees:"Rs1,585 ",
-     totalFees:"1,776 total ",
+     rating:"5/5 ",
+     hotelFees:"Rs 1,585 ",
+     totalFees:"Rs 1,776 total ",
     },
     {hotelPic:"https://images.trvl-media.com/hotels/50000000/49160000/49158000/49157938/01b51481.jpg?impolicy=resizecrop&rw=455&ra=fit ",
      hotelName:"3102bce - A Vedic Resort ",
@@ -149,19 +149,22 @@ var hotelsDataObj=[
      hotelDesc:"Fully refundable ",
      hotelOffer:" ",
      rating:"4.8/5 ",
-     hotelFees:"Rs5,203 ",
-     totalFees:"Rs5,827 total ",
+     hotelFees:"Rs 5,203 ",
+     totalFees:"Rs 5,827 total ",
     },
-    {hotelPic:" ",
-     hotelName:" ",
-     hotelTag:" ",
-     hotelDesc:" ",
+    {hotelPic:"https://images.trvl-media.com/hotels/1000000/200000/197900/197807/b1170ee1.jpg?impolicy=resizecrop&rw=455&ra=fit ",
+     hotelName:" Save Club Mahindra Derby Green ",
+     
+    
+     hotelTag:"Mandrem ",
+     hotelDesc:"Fully refundable  ",                                                
      hotelOffer:" ",
-     rating:" ",
-     hotelFees:" ",
-     totalFees:" ",
+     rating:"2.8/5 ",
+     hotelFees:" Rs 15,203",
+     totalFees:"Rs 5,827 total  ",
     },
 ];
+
 hotelsDataObj.forEach(function(elem){
     var box=document.createElement("div")
     box.setAttribute("id","container")
@@ -191,6 +194,7 @@ hotelsDataObj.forEach(function(elem){
     var priceBox=document.createElement("div")
    
     
+   
     var priceList=document.createElement("div")
     priceList.setAttribute("id","price")
     var hotel_fees=document.createElement("h2")
@@ -206,5 +210,13 @@ hotelsDataObj.forEach(function(elem){
 
     box.append(detailsBox,priceBox)
     document.querySelector("#main").append(box)
+  
     
 })
+
+var divcn=document.querySelector("#container")
+divcn.addEventListener("click",function(){
+    window.location.href="reserve.html"
+    console.log("heool")
+})
+ 

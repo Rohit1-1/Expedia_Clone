@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="popUp.css">
+    <link rel="stylesheet" href="reserve.css">
+    <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+       body{
+           background-color: rgba(239, 239, 248, 0.753) !important;
+       }
+        .After-login{
+     width: 25%;
+     margin: auto;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 11px;
+    position: absolute;
+    top: 61px;
+    right: 55px;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+ }
+
+ .show-login{
+    opacity: 1;
+    pointer-events:auto;
+ }
+ .After-login>hr+p{
+    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%);
+    font-weight: 600;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ }
+ .After-login>h3,p{
+     text-align: center;
+     margin-bottom: 15px;
+     text-shadow: none;
+     color: black;
+ }
+ .After-login>h3{
+    margin-bottom: 8px !important;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    color: #141D38;
+ }
+ #email-Id{
+     color: gray;
+     font-weight: 600;
+ }
+ #signOut{
+     color: gray;
+     font-weight: 600;
+     text-decoration: underline;
+   
+ }
+ #signOut:hover{
+     color: blue;
+     cursor: pointer;
+ }
+
+ 
+ #member{
+     display: block;
+     margin: auto;
+     margin-bottom: 15px;
+     padding: 9px;
+     border-radius: 16px;
+     border: none;
+     background-color: blue;
+     color: white;
+     font-size: 11px;
+ }
+ 
+#prsn{
+    position: absolute;
+    right: 28%;
+    top: 11px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="navbarContanier">
+        <div id="navlogocont">
+            <div id="logo">
+                <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2" alt="">
+            </div>
+            <div id="More-trvl">More travel&ensp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>         
+        </div>
+      
+        <div id="control">
+      <div id="language-btn"><i class="fa-solid fa-globe"></i>&ensp;ENGLISH</div>
+      <div>Support</div>
+      <div>Trips</div>
+      <div id="sign-in">Sign In</div>
+    </div>
+    </div>
+    
+                               <!-- POP UP WINDOW  For MoRe Travle Start-->
+
+                               <div class="popUp-cont">
+                                <div><i class="fa-solid fa-hotel"></i>&ensp;&nbsp;Stays</div>
+                                <div><i class="fa-solid fa-plane-departure"></i>&ensp;&nbsp;Flights</div>
+                                <div><i class="fa-solid fa-car"></i>&ensp;&nbsp;Cars</div>
+                                <div><i class="fa-solid fa-box-open"></i>&ensp;&nbsp;Packages</div>
+                                <div><i class="fa-solid fa-umbrella-beach"></i>&ensp;&nbsp;Holiday activities</div>
+                                <div>Deals</div>
+                                <div>Groups & meetings</div>
+                                <div>Mobile</div>
+                            </div>
+                          
+                     
+                                    <!-- POP UP WINDOW  For MoRe Travle END-->
+          
+          
+                                    
+                               <!-- POP UP WINDOW  Globe Start-->
+                  <div class="for-bg">
+                                        
+                        <div class="slectRL">
+                          <div class="dis-cont"><button id="cross-btn">&times;</button>&nbsp;&ensp;<p> Display Setting</p></div>
+                          <div id="info"><i class="fa-solid fa-circle-info"></i><p>You can only access your trip information and Expedia Rewards points from the Expedia site you booked on.</p> </div>
+                          <select name="" id="region"> 
+                              <option >Region</option>
+                              <option value="India">India</option>
+                              <option value="Argentina">Argentina</option>
+                              <option value="Austria">Austria</option>
+                              <option value="Belgium">Belgium</option>
+                           
+                              <option value="Brazil">Brazil</option>
+                              <option value="Chile">Chile</option>
+                              <option value="Costa Rica">Costa Rica</option>
+                              <option value="China">China</option>
+                              <option value="Colombia">Colombia</option>
+                              <option value="Canada">Canada</option>
+                              <option value="Singapore">Singapore</option>
+                              <option value="Saudi Arabia">Saudi Arabia</option>
+                           
+                              <option value="Philippines">Philippines</option>
+                              <option value="Peru">Peru</option>
+                              <option value="Norway">Norway</option>
+                              <option value="New Zealand">New Zealand</option>
+                              <option value="Netherlands">Netherlands</option>
+                              <option value="Mexico">Mexico</option>
+                              <option value="Malaysia">Malaysia</option>
+                              <option value="Japan">Japan</option>
+                              <option value="Ireland">Ireland</option>
+                              <option value="Italy">Italy</option>
+                              <option value="Indonesia">Indonesia</option>
+                              <option value="Hong Kong SAR">Hong Kong SAR</option>
+                              <option value="Germany">Germany</option>
+                              <option value="France">France</option>
+                              <option value="Finland">Finland</option>
+                              <option value="Euro">Euro</option>
+                              <option value="Egypt">Egypt</option>
+                              <option value="Denmark">Denmark</option>
+                          </select>
+                          <select name="" id="language">
+                            <option >Language</option>
+                            <option value="English">English</option>
+                            <option value="Português">Português</option>
+                            <option value="Français">Français</option>
+                            <option value="Suomi">Suomi</option>
+                            <option value="Español">Español</option>
+                            <option value="Nederlands">Nederlands</option>
+                          </select>
+                          <button id="save">Save</button>
+                      </div>
+                   </div>
+                                <!-- POP UP WINDOW  Globe END!-->
+          
+          
+                              <!-- POP UP WINDOW  Sign in START!-->
+                  <div class="signIn-pop">
+                          <h1>Members can access discounts and special features.</h1>
+                          <button id="redt-signIn">Sign in</button>
+                         <h2>Don't have an account?</h2>
+                          <button id="redt-signUp">Create one</button>
+                          <hr>
+                           <p>Expedia!</p>
+                  </div>
+                  <div class="After-login">
+                          <h3 id="User-Id"></h3>
+                        
+                         <p id="email-Id"></p>
+                         <button id="member">Blue Member</button>
+                         <p id="signOut">Sign Out</p> 
+                          <hr>
+                           <p>Expedia!</p>
+                  </div>
+                                <!-- POP UP WINDOW  Sign in END!-->
+
+
+<div id="top-main">
+    <div id="covid">
+        <div id="icn"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div>
+            <p>Check COVID-19 restrictions.</p>
+            <a href="">Find More</a>
+            <a href="">Dismiss</a>
+        </div>
+    </div>
+    <div id="tp-img-con">
+        <div><img  src="https://images.trvl-media.com/hotels/1000000/990000/981100/981028/146f4c32.jpg?impolicy=resizecrop&rw=598&ra=fit" alt=""></div>
+        <div> <img src="https://images.trvl-media.com/hotels/1000000/990000/981100/981028/f39ef80f.jpg?impolicy=resizecrop&rw=297&ra=fit" alt=""></div>
+        <div> <img  src=https://images.trvl-media.com/hotels/1000000/990000/981100/981028/fa991c55.jpg?impolicy=resizecrop&rw=1200&ra=fit" alt=""></div>
+        <div> <img src="https://images.trvl-media.com/hotels/1000000/990000/981100/981028/145da440.jpg?impolicy=resizecrop&rw=297&ra=fit" alt=""></div>
+        <div> <img src="https://images.trvl-media.com/hotels/1000000/990000/981100/981028/e193b97a.jpg?impolicy=resizecrop&rw=297&ra=fit" alt=""></div>
+        
+       
+       
+       
+       
+    </div>
+    <hr>
+    <div></div>
+
+
+</div>
+<div id="stik">
+    <div id="side-bar">
+        <img src="https://tpc.googlesyndication.com/simgad/17447823249981941085?" alt="">
+        </div>
+</div>
+     <div id="choseroom">
+         <h1>Choose your room</h1>
+        <div id="room-info">
+       <div id="a">
+           <div  class="png"><img src="https://images.trvl-media.com/hotels/1000000/990000/981100/981028/beca5c50.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt=""></div>
+           <h4>Classic Room, 1 Double Bed</h4>
+           <div class="iinf">
+               <div><p>205 sq ft</p></div>
+               <div><p>Sleeps 3</p></div>
+               <div><p>1 Double Bed</p></div>
+               <div><p>Free WiFi</p></div>
+               <div><p>Breakfast buffet</p></div>
+               <div><p>Free self-parking</p></div>
+           </div>
+           <div class="detail">
+          <p>Fully refundable
+        </p>
+          <p>More details
+          </p>
+           </div>
+           <div class="pric">
+               <h3>Rs12,135</h3>
+               <p>Rs14,319 total</p>
+           </div>
+           <div class="btnn">
+       <p>Price details</p> <button id="resrv">Reserve</button>
+           </div>
+       </div>
+
+       <div id="b">
+        <div class="png"><img src="https://images.trvl-media.com/hotels/1000000/990000/981100/981028/e3019342.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt=""></div>
+        <h4>Classic Room, 1 Double Bed</h4>
+        <div class="iinf">
+            <div><p>205 sq ft</p></div>
+            <div><p>Sleeps 3</p></div>
+            <div><p>1 Double Bed</p></div>
+            <div><p>Free WiFi</p></div>
+            <div><p>Breakfast buffet</p></div>
+            <div><p>Free self-parking</p></div>
+        </div>
+        <div class="detail">
+       <p>Fully refundable
+     </p>
+       <p>More details
+       </p>
+        </div>
+        <div class="pric">
+            <h3>Rs12,135</h3>
+            <p>Rs14,319 total</p>
+        </div>
+        <div class="btnn">
+    <p>Price details</p> <button id="resrv">Reserve</button>
+        </div>
+       </div>
+
+       <div id="c">
+        <div  class="png"><img src="https://images.trvl-media.com/hotels/1000000/990000/981100/981028/024c3411.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt=""></div>
+        <h4>Classic Room, 1 Double Bed</h4>
+        <div class="iinf">
+            <div><p>205 sq ft</p></div>
+            <div><p>Sleeps 3</p></div>
+            <div><p>1 Double Bed</p></div>
+            <div><p>Free WiFi</p></div>
+            <div><p>Breakfast buffet</p></div>
+            <div><p>Free self-parking</p></div>
+        </div>
+        <div class="detail">
+       <p>Fully refundable
+     </p>
+       <p>More details
+         </p>
+        </div>
+        <div class="pric">
+            <h3>Rs12,135</h3>
+            <p>Rs14,319 total</p>
+        </div>
+        <div class="btnn">
+    <p>Price details</p> <button id="resrv">Reserve</button>
+        </div>
+       </div>
+
+        </div>
+     </div>
+       
+         <div>
+
+         </div>
+                   
+    </body>
+</html>
+<script>
+    document.getElementById("resrv").addEventListener("click",function(){
+        window.location.href="booking.html"
+    })
+</script>
+<script src="pop.js"></script>

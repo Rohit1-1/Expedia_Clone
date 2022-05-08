@@ -262,25 +262,26 @@ margin-left: 50px;
             <form id="bookingF">
                 <label class="lable">Name on Card*
                 </label>
-                <input type="text" placeholder="Enter name">
+                <input id="nme" type="text" placeholder="Enter name" required>
                 <label class="lable">Debit/Credit card number*</label>
-                <input type="number" placeholder="Enter Card number">
+                <input id="cradn" type="number" placeholder="Enter Card number" required>
                
                 <label class="lable">Expiry date*</label>
-                <input type="text" placeholder="Month">
-                <input type="number" placeholder="Year">
+                <input id="mnth" type="text" placeholder="Month" required>
+                <input id="yer" type="number" placeholder="Year" required>
 
                 <label class="lable">Security code*</label>
-                <input type="number" placeholder="Enter CVV">
+                <input id="cvv" type="number" placeholder="Enter CVV" required>
 
                 <label class="lable">Billing country/territory*</label>
-                <input type="text" placeholder="Enter Country">
+                <input id="cntry" type="text" placeholder="Enter Country" required>
 
                 <label class="lable">PAN*</label>
-                <input type="text" placeholder="Enter Id Number">
+                <input id="id" type="text" placeholder="Enter Id Number" required>
+                <input id="cnfrm" type="submit" value="Continue">
             </form>
                   
-                 <button id="cnfrm">Confirm</button>  
+                  
               
                 
             
@@ -291,11 +292,28 @@ margin-left: 50px;
     </html>
     <script>
         var usr=JSON.parse(localStorage.getItem("Username"))
-        document.querySelector("#cnfrm").addEventListener("click",function(){
-            alert(`Hey, ${usr} Booking Successful ! You'll receive confirmation on your Email. Continue Exploring Thank You!`)
-            window.location.href="landing.html"
-        })
-    </script>
-    
+        var form=document.querySelector("#bookingF")
+    var input= document.querySelector(".input")
+   form.addEventListener("submit",function(){
+       event.preventDefault()
+      var value={
+          nme:form.nme.value,
+          crd:form.cradn.value,
+          mnth:form.mnth.value,
+          yer:form.yer.value,
+          cvv:form.cvv.value,
+         cntry:form.cntry.value,
+
+
+      }
+      if(value.nme==""||value.crd==""||value.mnth==""||value.yer==""||value.cvv==""||value.cntry==""){
+          alert("Please fill all the details!")
+      }
+      else{
+          alert(`Hey, ${usr} Your Booking is successful ! Continue Exploring Thank You! `)
+      }
+   })
+       
+</script>
     <script src="pop.js"></script>
     

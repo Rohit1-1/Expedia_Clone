@@ -42,11 +42,11 @@
                                <!-- /* Top SEction START !*/ -->
     <div id="input_box">
         <div class="page">
-            <button>Stays</button>
-            <button>Flight</button>
-            <button>Cars</button>
-            <button>Packages</button>
-            <button>Things To Do</button>
+            <button id="sty">Stays</button>
+            <button id="flit">Flight</button>
+            <button id="crs">Cars</button>
+            <button id="pkgs">Packages</button>
+            <button >Things To Do</button>
           
         </div>
         <hr>
@@ -190,6 +190,20 @@
 </body>
 </html>
 <script src="pop.js"></script>
+<script>
+    document.querySelector("#sty").addEventListener("click",function(){
+    window.location.href="landing.html"
+})
+document.querySelector("#flit").addEventListener("click",function(){
+    window.location.href="flights.html"
+})
+document.querySelector("#crs").addEventListener("click",function(){
+    window.location.href="cars.html"
+})
+document.querySelector("#pkgs").addEventListener("click",function(){
+    window.location.href="packages.html"
+})
+</script>
  
 
 

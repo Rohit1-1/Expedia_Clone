@@ -7,15 +7,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXPEDIA-FLIGHT-RETURN</title>
+    <title>EXPEDIA-FLIGHT-MultiCity</title>
     <link rel="stylesheet" href="navbar1.css">
     <link rel="stylesheet" href="landing1.css">
     <link rel="stylesheet" href="popUp1.css">
-    <link rel="stylesheet" href="airport transport.css">
+    <link rel="stylesheet" href="car hire.css">
+    <link rel="stylesheet" href="../Landingpage/navrespons.css">
   
     <script src="https://kit.fontawesome.com/e488acc005.js" crossorigin="anonymous"></script>
   <style>
-  
 
   </style>
 </head>
@@ -44,35 +44,37 @@
                                <!-- /* Top SEction START !*/ -->
     <div id="input_box">
         <div class="page">
-            <button>Stays</button>
-            <button>Flight</button>
-            <button>Cars</button>
-            <button>Packages</button>
-            <button>Things To Do</button>
+            <button id="sty">Stays</button>
+            <button id="flit">Flight</button>
+            <button id="crs">Cars</button>
+            <button id="pkgs">Packages</button>
+            <button >Things To Do</button>
           
         </div>
         <hr>
+        
         <div class="select_button">
             <div>
-                
                 <div><a href="car hire.html">Car hire</a></div>
                 <div><a href="airport transport.html">Airport transport</a></div>
             </div>
-            <div>
-                <div><h4> 1 traveller <i class="fa-solid fa-angle-down"></i></h4></div>
-               
-            </div>
-        </div>
-        <div class="input_button">
-            <button><div class="icon"><i class="fa-solid fa-location-dot"></i></div><div>Airport </div></button>
-            <button><div class="icon"><i class="fa-solid fa-exchange"></i></div></button>
-            <button><div class="icon"><i class="fa-solid fa-hotel"></i></div><div>Hotels</div></button>
-            <button>&ensp;<div  class="icon"><i class="fa-solid fa-calendar-day"></i></div>&ensp;<div>Flight arrival date</div></button>
-            <button>&ensp;<div  class="icon"><i class="fa-solid fa-clock"></i></div>&ensp;<div>Flight arrival time</div></button>
-        </div>
-        <div class="checkbox">
-            <div><input type="checkbox" id="book_return">&ensp;&nbsp;<div>Book Return</div> </div>
 
+            
+        </div>
+
+        <div class="input_button">
+            <button><div class="icon"><i class="fa-solid fa-location-dot"></i></div><div>Pick-up</div></button>
+            
+            <button>&ensp;<div  class="icon"><i class="fa-solid fa-location-dot"></i></div>&ensp;<div>Same as pick-up</div></button>
+        </div>
+
+        <div class="input_btn">
+            <button><div class="icon"><i class="fa-solid fa-calendar-day"></i></div><div>Pick-up date</div></button>
+            <button><div class="icon"><i class="fa-solid fa-calendar-day"></i></div><div>Drop-off date</div></button>
+            <button>&ensp;<div  class="icon"><i class="fa-solid fa-clock"></i></div>&ensp;<div>Pick-up time</div></button>
+            <button>&ensp;<div  class="icon"><i class="fa-solid fa-clock"></i></div>&ensp;<div>Drop-off time</div></button>
+
+            
         </div>
         <!-- <div></div> -->
         <button id="srchButton">Search</button>       
@@ -246,12 +248,23 @@
                                 
 </body>
 </html>
-<script src="pop.js"></script>
+<script src="../Landingpage/pop.js"></script>
 
 
 
+<script>
 
+    document.querySelector("#flit").addEventListener("click",function(){
+        window.location.href="../FlightPage/flights.html"
+    })
+    document.querySelector("#crs").addEventListener("click",function(){
+        window.location.href="../Carspage/car hire.html"
+    })
+    document.querySelector("#pkgs").addEventListener("click",function(){
+        window.location.href="../PackagePage/packages.html"
+    })
+    
+    
+    </script>
+    
 
-
-<!-- color: #FFFFFF;
-    text-shadow: 0px 1px 2px rgb(0 11 38 / 80%); -->

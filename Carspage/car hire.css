@@ -33,6 +33,15 @@
     text-decoration: none;
     color: black;
 }
+.select_button>div:first-child>div>a:focus{
+    text-decoration: none;
+    color: rgb(16, 19, 243);
+}
+.select_button>div:first-child>div>a:active{
+    text-decoration: none;
+    color: rgb(16, 19, 243);
+}
+
 .select_button>div:first-child>div:hover{
     background-color: #e0e7f7;
 }
